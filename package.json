@@ -1,6 +1,6 @@
 {
   "name": "@psk/docker-publish",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "npm scripts to automate working with docker images.",
   "repository": {
     "type": "git",
