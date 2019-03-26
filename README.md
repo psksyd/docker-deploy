@@ -1,4 +1,4 @@
-# @psk/docker-deploy
+# @psk/docker-publish
 
 npm scripts to automate docker images.
 
@@ -11,7 +11,7 @@ Uses the name and version number from package.json to keep your docker image nam
 
 in your project, execute
 
-    npm install @psk/docker-deploy --save
+    npm install @psk/docker-publish --save
 
 If you are pushing to a private docker repo, add the following to your package.json
 

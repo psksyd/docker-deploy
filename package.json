@@ -1,10 +1,10 @@
 {
-  "name": "@psk/docker-deploy",
+  "name": "@psk/docker-publish",
   "version": "1.0.0",
   "description": "npm scripts to automate working with docker images.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/psksyd/docker-deploy.git"
+    "url": "https://github.com/psksyd/docker-publish.git"
   },
   "keywords": [
     "docker",
@@ -14,9 +14,9 @@
   "author": "PSKSyd AB",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/psksyd/docker-deploy/issues"
+    "url": "https://github.com/psksyd/docker-publish/issues"
   },
-  "homepage": "https://github.com/psksyd/docker-deploy",
+  "homepage": "https://github.com/psksyd/docker-publish",
   "bin": {
     "docker-build": "./docker-build",
     "docker-push": "./docker-push"
