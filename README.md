@@ -25,7 +25,6 @@ Add some scripts that look like this. You might adjust to your liking
 
       "scripts": {
     	    "docker-build": "rm -rf node_modules && npm i --production &&  docker-build",
-    	    "docker-run": "docker-run",
     	    "docker-push": "docker-push",
       },
 
@@ -34,10 +33,6 @@ Now in your project, when you are ready to make a new image, bump your version n
 To build a local docker image quickly, for running later
 
     npm run docker-build
-
-Run the local docker image just built
-
-    npm run docker-run
 
 Push the docker image to the docker-registry specified in your package.json
 
