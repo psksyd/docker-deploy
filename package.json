@@ -1,23 +1,24 @@
 {
-  "name": "docker-build-run-push",
-  "version": "3.0.0",
+  "name": "@psk/docker-deploy",
+  "version": "1.0.0",
   "description": "npm scripts to automate working with docker images.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ryanramage/docker-build-run-push.git"
+    "url": "https://github.com/psksyd/docker-deploy.git"
   },
   "keywords": [
-    "docker"
+    "docker",
+    "deploy",
+    "versioning"
   ],
-  "author": "Ryan Ramage",
+  "author": "PSKSyd AB",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ryanramage/docker-build-run-push/issues"
+    "url": "https://github.com/psksyd/docker-deploy/issues"
   },
-  "homepage": "https://github.com/ryanramage/docker-build-run-push",
+  "homepage": "https://github.com/psksyd/docker-deploy",
   "bin": {
     "docker-build": "./docker-build",
-    "docker-push": "./docker-push",
-    "docker-run": "./docker-run"
+    "docker-push": "./docker-push"
   }
 }

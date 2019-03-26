@@ -8,6 +8,17 @@ if [ -z "$NAME" ]; then
     NAME=$(node -e "console.log(require('./package.json').name.split('/').pop())")
 fi
 
+PREFIX=$(node -e "console.log(require('./package.json')['docker-registry'] || '')")
+if [ -z "$PREFIX" ]; then
+    PREFIX=$(node -e "console.log(require('./package.json')['docker-user'] || '')")
+fi
+
+if [ -z "$PREFIX" ]; then
+    echo "docker push requires either docker-registry or docker-user in package.json"
+    exit 1
+fi
+
 echo "$VERSION"
 
-docker build -t "$NAME:$VERSION" "$@" .
+docker build -t "$PREFIX/$NAME:$VERSION" "$@" .
+docker tag -f "$PREFIX/$NAME:$VERSION" "$PREFIX/$NAME:latest"
