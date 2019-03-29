@@ -21,4 +21,4 @@ fi
 echo "$VERSION"
 
 docker build -t "$PREFIX/$NAME:$VERSION" "$@" .
-docker tag -f "$PREFIX/$NAME:$VERSION" "$PREFIX/$NAME:latest"
+docker tag "$PREFIX/$NAME:$VERSION" "$PREFIX/$NAME:latest"
